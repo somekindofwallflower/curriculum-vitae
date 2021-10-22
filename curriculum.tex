@@ -1,0 +1,166 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=11pt
+              ]{curriculum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8.5cm}
+\setlength\headerheight{4cm}            
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xcolor}
+
+\definecolor{primary}{HTML}{A64452}
+\definecolor{secondary}{HTML}{EBEBEB}
+\definecolor{lightprimary}{HTML}{cccccc}
+\colorlet{highlightbarcolor}{secondary}
+\colorlet{headerbarcolor}{primary}
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{primary}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name {M.K}
+\tagline{Self-motivated Front End Developer with high level of experience over more than 4 years collaborating and working on multiple web-based projects. Passionate, hardworking coder with penchant for developing customized interfaces that factor in unique demands for accessibility and reachability.}
+\photo[round]{avatar.jpg}{\dimexpr \headerheight-\marginbottom}
+\makeheader
+
+\highlightbar{
+  
+    \section{Skills}
+    
+    \skillsection{Programming languages}
+    \skill{Javascript}{4}
+    \skill{C}{3}
+    \skill{Java}{2}
+    \skill{Php}{2}
+    \skill{Python}{2}
+
+    \vspace{1em}
+    \skillsection{Frontend Development}
+    \skill{AngularJs}{3}
+    \skill{Vue}{4}
+    \skill{React}{2}
+    \skill{Html5}{4}
+    \skill{Css}{4}
+    \skill{Sass}{3}
+    \skill{Bootstrap}{4}
+    \skill{Vuetify}{4}
+    \skill{Tailwind}{4}
+    \skill{Ant Design}{4}
+    \skill{Framework7}{3}
+    
+     \vspace{1em}
+    \skillsection{Backend Development}
+    \skill{NodeJs}{2}
+    \skill{Laravel}{2}
+
+    \vspace{1em}
+    \skillsection{DataBase}
+    \skill{MySql}{2}
+    
+    \vspace{1em}
+    \skillsection{Backend as a Service(BaaS)}
+    \skill{Firebase}{2}
+    
+    \vspace{1em}
+    \skillsection{Software}
+    \skill{Invision}{2}
+    \skill{Figma}{2}
+
+    \vspace{1em}
+    \skillsection{Other}
+    \skill{Linux}{4}
+    \skill{Git}{3}
+
+    \vspace{1em}
+    \skillsection{Languages}
+    \skill{Albanian}{5}
+    \skill{English}{4}
+    \skill{Italian}{3}
+    \skill{Bosnian}{3}
+    \bigskip
+    
+    % \section{Certificates}
+    % \simpleskill{AWS certified cloud practitioner}
+
+}
+\mainbar{
+    % \section{About this template}
+    % Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
+    
+    \section{Contact}
+    
+    \location{Milano}
+    \github{@somekindofwallflow3r}{https://github.com/somekindofwallflow3r}
+
+    \section[\faMortarBoard]{Education}
+    \job{2015-10-01 - 2018-10-01}
+        {University of Tirana, Tiranë}
+        {Master of Computer Science}
+        {}
+        
+    \job{2012-10-01 - 2015-09-10}
+    {University of Tirana, Tiranë}
+    {Bachelor of Computer Science}
+    {}
+
+
+    % \section{Achievements, honours and awards}
+    % \achievement{My first achievement}
+    % \achievement{My second achievement}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Computer literacy}
+    \tag{Strong creative ability}
+    \tag{Attention to detail}
+    \tag{A keen interest in technology}
+    \tag{Very good problem-solving skills}
+    \tag{A logical approach to work}
+    \tag{Strong communication skills}
+    \tag{Strong numeracy skills}
+   
+    
+    \medskip
+    
+    \section{Wheel Chart}
+    % This is taken from AltaCV
+    % see https://github.com/liantze/AltaCV for details
+    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+        7/8em/accent!20/Sleep,          % comma-separated list of
+        8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+        2/8em/accent!80/Exercise,% here, the color is shades of the accent color
+        3/8em/accent!60/Programming cool stuffs,
+        4/8em/accent/Too long to explain things
+    }
+}
+\makebody
+\end{document}
